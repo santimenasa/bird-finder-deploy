@@ -13,7 +13,7 @@ const BirdDetail = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`http://localhost:5000/birds/${id}`)
+        .get(`bird-finder-si-production.up.railway.app/birds/${id}`)
         .then((res) => res.data)
         .then((data) => setInput(data.bird));
     };
@@ -22,7 +22,7 @@ const BirdDetail = () => {
 
   const sendRequest = async () => {
     await axios
-      .put(`http://localhost:5000/birds/${id}`, {
+      .put(`bird-finder-si-production.up.railway.app/birds/${id}`, {
         species: String(input.species),
         gender: String(input.gender),
         location: String(input.location),

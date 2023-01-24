@@ -3,7 +3,7 @@ import React from "react";
 import Bird from "./Bird";
 import "./bird.css";
 import { useEffect, useState } from "react";
-const URL = "http://localhost:5000/birds";
+const URL = "bird-finder-si-production.up.railway.app/birds";
 
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);

@@ -8,7 +8,7 @@ const Bird = (props) => {
   const history = useNavigate();
   const deleteHandler = async () => {
     await axios
-      .delete(`http://localhost:5000/birds/${_id}`)
+      .delete(`bird-finder-si-production.up.railway.app/birds/${_id}`)
       .then((res) => res.data)
       .then(() => history('/'))
       .then(() => history("birds"));
