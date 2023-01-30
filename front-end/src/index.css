@@ -2,8 +2,15 @@
   margin: 0;
   padding: 0;
   color: #fefae0;
+  
 }
-
+.birds{
+  height: 100vh;
+  background-color: #BC6C25;
+  }
+.birds > ul {
+  background-color: #BC6C25;
+}
 .add-bird {
   background-color: #bc6c25;
 }
