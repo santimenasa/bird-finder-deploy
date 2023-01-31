@@ -13,7 +13,7 @@ const Home = () => {
       </p>
       <div className="home-btn">
       <Button variant="contained" LinkComponent={NavLink} to={"/birds"}>
-        Show every bird find in san isidro so far
+       Birds find in san isidro so far
       </Button>
       </div>
     </div>
