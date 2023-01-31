@@ -10,7 +10,11 @@ const birdSchema = new Schema(
     },
     gender: {
       type: String,
-      require: true
+      require: true,
+      enum : {
+        values:['Male','male','Female','female','Cant tell'],
+        message: 'Can only be Male, Female or Cant tell'
+      }
     },
     location: {
       type: String,
