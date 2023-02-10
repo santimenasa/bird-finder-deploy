@@ -26,6 +26,7 @@ const Birds = () => {
           placeholder={`Search Bird`}
           onChange={(event) => setSearchTerm(event.target.value)}
         />
+        <button className="search-btn" onClick={(event) => setSearchTerm(event.target.value)}><i class="fa-solid fa-clipboard-list"></i></button>
       </span>
       <ul>
         {birds &&

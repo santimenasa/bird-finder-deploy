@@ -78,3 +78,15 @@
   font-size: large;
   font-family: "Roboto Condensed", sans-serif;
 }
+.search-btn{
+  color: #dda15e;
+  background-color: #dda15e;
+ border-style: none;
+ font-size: xx-large;
+ margin-top: 0.6em;
+ margin-left: 1em;
+ background-color: #bc6c25;
+}
+.search-btn > i:hover{
+color: #283618;
+}
